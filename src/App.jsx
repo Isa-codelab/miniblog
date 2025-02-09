@@ -3,7 +3,9 @@ import Home from './pages/Home/home';
 import About from './pages/About/about';
 
 import './App.css';
+
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 function App() {
 
@@ -11,6 +13,7 @@ function App() {
     <>
       <div className='App'>
         <BrowserRouter>
+        <Navbar/>
         <div className='container'>
           <Routes>
             <Route path='/' element={<Home />} />
