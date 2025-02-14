@@ -10,8 +10,8 @@ textarea::placeholder{
   font-family: "Montserrat", sans-serif;
 }
 
-input::focus,
-textarea::focus{
+input:focus,
+textarea:focus{
   outline: none;
 }
 

@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/home';
-import About from './pages/About/about';
-import Register from './pages/Register/register';
-import Login from './pages/Login/login';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Register from './pages/Register/Register';
+import Login from './pages/Login/Login';
 
 import './App.css';
 
