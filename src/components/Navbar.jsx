@@ -3,10 +3,12 @@ import styles from './Navbar.module.css';
 import { useAuthValue} from '../context/AuthContext';
 
 import { NavLink } from 'react-router-dom';
+import { useAuthentication } from '../hooks/useAuthentication';
 
 const Navbar = () => {
 
   const {user} = useAuthValue();
+  const {logout} = useAuthentication;
   
   return (
     <nav className= {styles.navbar}>
@@ -42,7 +44,11 @@ const Navbar = () => {
                     <NavLink to='/dashboard' className={({isActive}) => (isActive ? styles.active : "")}>Dashboard</NavLink>
                 </li>
                </>
-
+           )}
+           {user &&(
+            <li>
+                <button onClick={logout}>Sair</button>
+            </li>
            )}
         </ul>
     </nav>
