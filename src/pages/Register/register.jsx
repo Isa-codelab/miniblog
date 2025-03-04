@@ -14,8 +14,6 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
 
-    form.reset();
-    
     e.preventDefault();
     setError("");
 
