@@ -8,8 +8,8 @@ const CreatePost = () => {
 
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
-  const [image, setImage] = useState(null);
-  const [tags, setTags] = useState([]);
+  const [image, setImage] = useState('');
+  const [tags, setTags] = useState('');
   const [formError, setFormError] = useState('');
 
   const navigate = useNavigate();
@@ -35,6 +35,7 @@ const CreatePost = () => {
 
     if(!title || !image || !tags || !body) {
       setFormError('Por favor preencha todos os campos');
+      return;
     }
 
     if (formError) return;
